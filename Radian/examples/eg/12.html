@@ -1,0 +1,11 @@
+<h3>Example 12 (functional plots)</h3>
+
+<plot height=300 aspect=3 stroke-width=2 x="[[seq(0,4*PI,101)]]"
+      axis-x-label="Time" axis-y-label="sin(x) / cos(x)">
+  <lines y="[[sin(x)]]" stroke="red"/>
+  <lines y="[[cos(x)]]" stroke="blue"/>
+  <plot-options stroke-width=1>
+    <vlines x="[[[4]]]"></vlines>
+    <hlines y="[[[-0.4]]]"></hlines>
+  </plot-options>
+</plot>
